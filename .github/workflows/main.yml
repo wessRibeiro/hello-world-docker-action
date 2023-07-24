@@ -1,0 +1,16 @@
+on:
+    push:
+    
+  jobs:
+    hello_world_job:
+      name: a job to say hello
+      runs-on: ubuntu-latest
+      steps:
+        - name: hello world action step
+          id: hello
+          uses: 'actions/hello-horld-docker-action@v2'
+          with:
+            who-to-greet: 'Weslley ribeiro'
+            
+        - name: 'get the output time'
+          run: echo "the time was ${{steps.hello.outputs.time}}"
