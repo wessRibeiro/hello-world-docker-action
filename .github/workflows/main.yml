@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: hello world action step
         id: hello
-        uses: 'actions/hello-horld-docker-action@v2'
+        uses: 'actions/hello-world-docker-action@v2'
         with:
           who-to-greet: 'Weslley ribeiro'
           
